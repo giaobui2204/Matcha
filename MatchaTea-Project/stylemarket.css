@@ -1,0 +1,243 @@
+/* for the navbar */
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  outline: none; border: none; 
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+header {
+  font-size: 20px;
+  color: navy-blue;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #fff;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo {
+  font-size: 25px;
+  color: #333;
+  font-weight: bolder;
+}
+
+header .logo:hover{
+  color:#146384;
+}
+
+header .navigation-bar a{
+  font-size: 15px;
+  padding: 7px;
+  color: #666;
+}
+
+header .navigation-bar a:hover{
+  color: #146384;
+}
+
+header .icons a{
+  font-size: 20px;
+  padding: 3px;
+  color: #146384;
+} 
+
+header .icons a:hover{
+  color: #2b5796;
+}
+
+
+/* end of navbar */
+
+/* start the inner */
+body{
+  background:url(image/Matcha-team-bg.png) no-repeat;
+}
+
+.title{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  background: #93BFCF;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: nosne;
+  padding: 15px;
+  font-size: 15px;
+  color: white; 
+}
+
+.product-container h3{
+    font-size: 15px;
+    color: white;
+ 
+}
+
+.product-container .price{
+  color: white;
+}
+
+section {
+  padding: 100px;
+  padding-bottom: 50px;
+}
+
+.product-container img{
+  border-radius: 4px;
+  height: 300px;
+  width: 300px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1 rem;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding-top: 30px;
+}
+
+
+.container .product-container .product{
+  text-align: center;
+  padding: 8px 9px;
+  background: #193a5f;
+  /* box-shadow: 0 500px 600px rgba(0,0,0,.1); */
+  /* outline: 2px solid #439A97; */
+  outline-offset: -1.5rem;
+  cursor: pointer;
+}
+
+.container .product-container .product:hover{
+  outline: 1px solid #273f3e;
+  outline-offset: -1.5rem;
+}
+
+/* preview product part*/
+.products-preview{
+  position: fixed;
+  top:0; left:0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,.8);
+  color: black;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-preview .preview{
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 2rem;
+  width: 40rem;
+}
+
+.products-preview{
+  /* background-color: red; */
+}
+
+.products-preview .preview.active{
+  display: inline-block;
+}
+
+.products-preview .preview img{
+  width: 300px;
+  height: 300px;
+}
+
+.products-preview .preview .fa-times{
+  position: absolute;
+  top:1rem; right: 1.5rem;
+  cursor: pointer;
+  color: #193a5f;
+  font-size: 3rem;
+}
+.products-preview .preview .fa-times:hover{
+  transform: rotate(90deg);
+  color: black;
+}
+
+.products-preview .preview h3{
+  color: #444;
+  padding: .5rem 0;
+  font-size: 20px;
+}
+
+.products-preview .preview .stars i{
+
+  color: #193a5f;
+}
+
+.products-preview .preview p{
+  line-height: 1.5;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #777;
+}
+
+.products-preview .preview .price {
+  padding: 1rem 0;
+  font-size: 25px;
+  color: #193a5f;
+}
+
+.products-preview .preview .buttons {
+  display: flex; 
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+
+.products-preview .preview .buttons a{
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #193a5f;
+  border: .1rem solid #BDCDD6;
+}
+
+.products-preview .preview .buttons a.contact{
+  background: #BDCDD6;
+  color: #3C5169;
+}
+
+.products-preview .preview .buttons a.wishlist{
+  background: #FFEBEB;
+  color: #a77275;
+}
+
+
+/* end of product preview */
+
+/* end of inner */
