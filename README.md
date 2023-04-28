@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Matcha</h1>
 
-<p align="center" id="description">An hackathon project using HTML CSS JavaScript to complete</p>
+<p align="center" id="description">An Online Platform Connecting College Students With Financial Resources And Funding Opportunities</p>
 
 <h2>🚀 Demo</h2>
 
